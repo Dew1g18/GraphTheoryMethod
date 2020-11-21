@@ -69,7 +69,7 @@ public class Independence {
 
 
     /**
-     * just checks all the independence sets found and returns
+     * just checks all the independence sets found and returns the size of the largest
      * @param sets The Independence sets found by getIndependenceSets()
      * @return
      */
