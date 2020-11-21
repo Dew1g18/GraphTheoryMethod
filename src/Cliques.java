@@ -7,10 +7,10 @@ import java.util.Comparator;
 public class Cliques {
 
 
-int adjacencies[][];
+Integer adjacencies[][];
 Integer cycles[][];
 
-    public Cliques(int adj[][], Integer cyc[][]){
+    public Cliques(Integer adj[][], Integer cyc[][]){
         this.adjacencies=adj;
         this.cycles = cyc;
     }

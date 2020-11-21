@@ -1,7 +1,7 @@
 public class App {
 
     public static void main(String[] args){
-        int adjacencies[][] = {{3, 5, 6, 14, 16, 17}, {10, 11, 15, 16}, {1, 4, 6, 11},
+        Integer adjacencies[][] = {{3, 5, 6, 14, 16, 17}, {10, 11, 15, 16}, {1, 4, 6, 11},
                 {3, 5, 6, 14, 15, 16, 17},
                 {1, 4, 8, 9, 11, 15, 17}
                 , {1, 3, 4, 9, 12, 15}
@@ -49,9 +49,14 @@ public class App {
                 {11, 15, 17}};
 
 
-        Cliques c = new Cliques(adjacencies, cycles);
+//        Cliques c = new Cliques(adjacencies, cycles);
+//        c.initialRun();
 
-        c.initialRun();
+        Independence in = new Independence(adjacencies);
+        int number = in.independenceNumber(in.getIndependentSets());
+
+        System.out.println(number        );
+
 
     }
 }
